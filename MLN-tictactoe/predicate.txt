@@ -1,0 +1,4 @@
+Empty(coordx,coordy)
+Opponent(coordx,coordy)
+Mine(coordx,coordy)
+Place(coordx,coordy)

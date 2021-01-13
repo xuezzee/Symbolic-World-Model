@@ -1,0 +1,11 @@
+
+
+
+// predicate declarations
+Cancer(person)
+Friends(person,person)
+Smokes(person)
+
+// formulas
+1.677805    Smokes(x) => Cancer(x)
+-0.867177   Friends(x,y) => (Smokes(x) <=> Smokes(y))

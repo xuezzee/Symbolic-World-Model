@@ -1,0 +1,21 @@
+
+
+
+// predicate declarations
+Empty(coordx,coordy)
+Mine(coordx,coordy)
+Opponent(coordx,coordy)
+Place(coordx,coordy)
+
+// formulas
+0.000000    Empty(x,y) ^ Place(x,y)
+0.000000    !Empty(x,y) ^ Place(x,y)
+0.000000    Opponent(x,y) ^ Place(x,y)
+0.000000    Mine(x,y) ^ Place(x,y)
+0.000000    Mine(x,y) ^ Mine(z,y) ^ Empty(k,y) ^ Place(k,y)
+0.000000    Opponent(x,y) ^ Opponent(z,y) ^ Empty(k,y) ^ Place(k,y)
+0.000000    Mine(x,y) ^ Mine(x,z) ^ Empty(x,k) ^ Place(x,k)
+0.000000    Opponent(x,y) ^ Opponent(x,z) ^ Empty(x,k) ^ Place(x,k)
+0.000000    Mine(x,y) ^ Place(x,y)
+0.000000    Opponent(x,y) ^ Empty(x,y) ^ Place(x,y)
+0.000000    Opponent(x,y) ^ Mine(z,y) ^ Empty(k,y) ^ Place(k,y)
